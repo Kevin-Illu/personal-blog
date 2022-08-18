@@ -15,7 +15,7 @@ export default function Home({ allPostsData }) {
       </Head>
       <header className='header'>
         <h1 className="font-bold text-3xl">
-          Welcome to my <id className="text-blue">Blog</id>
+          Welcome to my <span className="text-blue">Blog</span>
         </h1>
         <Image src="/vercel.svg" alt='vercel logo' width="80" height="28" />
       </header>
