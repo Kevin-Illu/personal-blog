@@ -63,12 +63,6 @@ ul {
     padding: 0;
 }
 
-.posts-list {
-    display: grid;
-    grid-template-columns: 1;
-    padding-bottom: 1rem;
-}
-
 .post {
     border-bottom: #ededed 2px solid;
     margin-bottom: 4rem;

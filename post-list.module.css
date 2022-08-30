@@ -1,0 +1,6 @@
+.posts-list {
+    display: grid;
+    grid-template-columns: 1;
+    padding-bottom: 1rem;
+}
+
