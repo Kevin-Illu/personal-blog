@@ -4,22 +4,24 @@ import Link from "next/link";
 import Head from "next/head";
 import Date from "../../components/date"
 
+import styles from "../../styles/posts/post[id].module.css"
+
 export default function Post({ postData }) {
     return (
         <Layout>
             <Head>
                 <title>{postData.title}</title>
             </Head>
-            <header className="post-header">
+            <header className={styles.postHeader}>
                 <h1>{postData.title}</h1>
-                <div className="post-info-container">
-                    <span className="post-id">{postData.id}</span>
+                <div className={styles.postInfoContainer}>
+                    <span className={styles.postTitle}>{postData.id}</span>
                     <Date dateString={postData.date} />
                 </div>
             </header>
         
             <main>
-                <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+                <div className={styles.content} dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
             </main >
             <footer>
                 <Link href="/">

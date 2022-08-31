@@ -1,0 +1,38 @@
+.post {
+    border-bottom: #ededed 2px solid;
+    /* margin-bottom: 4rem; */
+    padding-bottom: 1.6rem;
+}
+
+.post:last-child {
+    border-bottom: none;
+}
+
+.postTitle {
+    margin: 0 0 .6rem;
+    cursor: pointer;
+    transition: color .2s ease-in-out;
+}
+
+.postTitle:hover {
+    color: #dfdfdf;
+    text-decoration: underline;
+}
+
+.postDate {
+    color: #a9a9a9;
+    font-size: 1rem;
+}
+
+.postHeader {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.postInfoContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}

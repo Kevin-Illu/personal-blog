@@ -1,12 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Link from 'next/link'
+
+import { getSortedPostsData } from '../lib/posts';
 
 import { Layout } from '../components/Layout'
 import { PostList } from '../components/PostList'
 
-import { getSortedPostsData } from '../lib/posts';
-import Date from '../components/date'
+import styles from '../styles/header/header.module.css'
+
 
 export default function Home({ allPostsData }) {
   return (
@@ -15,8 +16,8 @@ export default function Home({ allPostsData }) {
         <title>Create Next App</title>
         <link rel="ico" href="/favicon.ico" />
       </Head>
-      <header className='header'>
-        <h1 className="font-bold text-3xl">
+      <header className={styles.header}>
+        <h1>
           Welcome to my <span className="text-blue">Blog</span>
         </h1>
       <Image src="/vercel.svg" alt='vercel logo' width="80" height="28" />

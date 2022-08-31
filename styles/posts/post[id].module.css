@@ -1,0 +1,19 @@
+.postHeader {
+  text-align: center;
+}
+
+.postInfoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.postTitle {
+  font-weight: bold;
+}
+
+.content {
+  padding: 1.4rem 0 0;
+}

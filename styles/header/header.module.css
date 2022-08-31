@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 3rem;
+    flex-wrap: wrap-reverse;
+}
+
+@media (max-width: 768px) {
+  .header {
+    justify-content: center;
+  }
+}
