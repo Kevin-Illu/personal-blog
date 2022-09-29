@@ -10,7 +10,7 @@ export default function Home({ allPostsData }) {
   return (
     <Layout>
       <Head>
-        <title>Create Next App</title>
+        <title>THANATOS</title>
         <link rel="ico" href="/favicon.ico" />
       </Head>
       <header className='header'>
